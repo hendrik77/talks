@@ -1,0 +1,26 @@
+{
+  "name": "mcpficationofsap",
+  "version": "1.0.0",
+  "description": "MCP'fication of SAP - Slidev Presentation",
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "keywords": [
+    "slidev",
+    "mcp",
+    "sap",
+    "presentation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@slidev/cli": "^52.11.5",
+    "@slidev/theme-apple-basic": "^0.25.1",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "slidev-theme-nord": "^0.0.6"
+  }
+}
