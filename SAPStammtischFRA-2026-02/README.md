@@ -19,3 +19,7 @@ Then open <http://localhost:3030>.
 pnpm build          # static SPA in ./dist
 pnpm export         # export to PDF
 ```
+
+## Licence
+
+This work is licensed under [Creative Commons Attribution 4.0 (CC-BY-4.0)](../LICENCE.md).

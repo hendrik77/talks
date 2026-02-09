@@ -1,4 +1,7 @@
 <INSTRUCTIONS>
+## Version Control
+Use **jj** (Jujutsu) for all version control operations. Never use `git commit`, `git add`, or other git mutation commands. The repo is jj-colocated (`.jj/` + `.git/`).
+
 ## Skills
 A skill is a set of local instructions to follow that is stored in a `SKILL.md` file. Below is the list of skills that can be used. Each entry includes a name, description, and file path so you can open the source for full instructions when using a specific skill.
 ### Available skills

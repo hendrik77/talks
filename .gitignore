@@ -3,6 +3,7 @@ node_modules/
 
 # Build outputs
 /dist/
+slides-export.pdf
 
 # Slidev/Vite
 /.slidev/
