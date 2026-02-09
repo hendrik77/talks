@@ -1,11 +1,21 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# SAP Stammtisch Frankfurt PLUS - Februar 2026
 
-To start the slide show:
+Community slides for the 94th SAP Stammtisch Frankfurt, hosted at DZ BANK on February 11, 2026. The deck covers community updates, the move from Meetup to openMeet, the talk agenda (including sessions on SAP project consolidation, Neptune DXP on BTP, and the MCP'fication of SAP), and the evening dinner plans.
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
+## Running the slides
 
-Edit the [slides.md](./slides.md) to see the changes.
+Requires [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/).
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+```bash
+pnpm install
+pnpm dev
+```
+
+Then open <http://localhost:3030>.
+
+## Building & exporting
+
+```bash
+pnpm build          # static SPA in ./dist
+pnpm export         # export to PDF
+```
