@@ -11,6 +11,7 @@ transition: slide-left
 layout: cover
 mdc: true
 background: ./mcp_server_background.png
+colorSchema: dark
 ---
 
 # MCP'fication of SAP
@@ -61,14 +62,15 @@ image: ./usbc_mcp_network.png
 # Model Context Protocol (MCP)
 
 <div class="grid grid-cols-2 gap-8">
-<div>
+<div class="grid grid-rows-2 gap-25">
 
 <v-clicks>
 
 - **Open standard** by Anthropic
 - Enables **structured communication** between LLMs and external systems
 - Provides **tools**, **resources**, and **prompts**
-- Think of it as **"USB-C for AI"**
+
+→ Think of it as **"USB-C for AI"**
 
 </v-clicks>
 
@@ -151,24 +153,13 @@ Live MCP AI Agents demo in VS Code
 Extending CAP and Fiori with MCP
 
 ::right::
-<div class="flex flex-col items-left gap-4">
+<div class="flex flex-col items-center gap-10">
 <div v-click>
  <img src="./TechEd-dev-advocats-mcp.png"
       class="w-100"
-      alt="Weg zur Trattoria" />
+      alt="Dev Advocates video start picture for MCP AI Agents" />
  </div>
-<div v-click class="mt-8">
 
-```mermaid {scale: 0.6}
-graph LR
-    A[VS Code / Cline] -->|MCP| B[SAP MCP Servers]
-    B --> C[CAP Knowledge]
-    B --> D[UI5 APIs]
-    B --> E[Fiori Patterns]
-    B --> F[MDK Templates]
-```
-
-</div>
 </div>
 
 ---
@@ -309,7 +300,7 @@ AI knows: entities, actions, relationships, best practices
 <div v-click class="p-3 bg-green-500 bg-opacity-10 rounded">
 
 ### 🧑‍💻 Development
-- **mcp-abap-adt** - ADT REST API bridge
+- **mcp-abap-adt** & **vibing-steampunk** - ADT REST API bridges
 - **ABAP FS** - 30+ language model tools
 - **mcp-sap-gui** - GUI automation
 - **Skybuffer** - ABAP Add-On (no middleware)
@@ -327,7 +318,7 @@ AI knows: entities, actions, relationships, best practices
 
 <div v-click class="mt-6">
 
-**Key Contributors:** marianfoo, mario-andreschak, serdarbeden, lemaiwo, marcellourbani
+**Community heros - github user(name):** marianfoo (Marian Zeis), mario-andreschak (Mario Andreschak), serdarbeden (Serdar Beden), lemaiwo (Wouter Lemaire), marcellourbani (Marcello Urbani), oisee (Alice V.), and many more..
 
 </div>
 
@@ -388,7 +379,7 @@ Bringing AI to on-premise ABAP development
 
 <v-clicks>
 
-**Problem:** Joule isn't available for on-premise S/4HANA
+**Problem:** Joule availabilty for on-premise ABAP not a given
 
 **Solution:** Multiple community MCP servers bridging the gap
 
@@ -510,7 +501,7 @@ What's Coming Next
 
 - **Integration Suite** MCP Gateway GA - one-step MCP from existing APIs
 - **ABAP Cloud in VS Code** (Q2) - file-based dev with native AI
-- **Specialized Models:** SAP-ABAP-1, SAP-RPT-1 for superior accuracy
+- **Specialized Models:** SAP-ABAP-1, SAP-RPT-1 for spedific use cases
 
 </v-clicks>
 
@@ -586,7 +577,7 @@ graph LR
 
 ---
 
-# Getting Started
+# Getting Started: Vibe coding
 
 <div class="grid grid-cols-2 gap-8">
 <div>
@@ -643,16 +634,14 @@ graph LR
 
 # Key Resources
 
-| Category | Resource |
-|----------|----------|
-| **SAP Official** | github.com/cap-js/mcp-server |
-| | github.com/SAP/open-ux-tools |
-| | github.com/UI5/mcp-server |
-| | github.com/SAP/mdk-mcp-server |
-| **Community** | github.com/marianfoo/mcp-sap-docs |
-| | github.com/mario-andreschak/mcp-abap-adt |
-| | github.com/oisee/odata_mcp_go |
-| **Protocol** | modelcontextprotocol.io |
+| Category | Resource | | Category | Resource |
+|----------|----------|-|----------|----------|
+| **SAP Official** | [github.com/cap-js/mcp-server](https://github.com/cap-js/mcp-server) | | **Community** | [github.com/marianfoo/mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs) |
+| | [github.com/SAP/open-ux-tools](https://github.com/SAP/open-ux-tools) | | | [github.com/mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) |
+| | [github.com/UI5/mcp-server](https://github.com/UI5/mcp-server) | | | [github.com/oisee/odata_mcp_go](https://github.com/oisee/odata_mcp_go) |
+| | [github.com/SAP/mdk-mcp-server](https://github.com/SAP/mdk-mcp-server) | | | [github.com/oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) |
+| **Protocol** | [modelcontextprotocol.io](https://modelcontextprotocol.io) | | | [github.com/lemaiwo/btp-sap-odata-to-mcp-server](https://github.com/lemaiwo/btp-sap-odata-to-mcp-server) |
+
 
 ---
 layout: center

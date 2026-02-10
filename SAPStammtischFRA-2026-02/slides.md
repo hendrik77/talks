@@ -68,7 +68,6 @@ layoutClass: gap-8
 - Von der Community, für die Community
 - Heute: Stammtisch Nr. 94
 - Sonderformat: PLUS Vorträge
-- Nächster Meilenstein: Nr. 100 im August
 
 ::right::
 
