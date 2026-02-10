@@ -29,7 +29,7 @@ npm run export   # Export to PDF
 
 ## Version Control
 
-Use **jj** (Jujutsu) for version control, not git. See https://docs.jj-vcs.dev/latest/
+Use **jj** (Jujutsu) for version control, not git. Never use `git commit`, `git add`, or other git mutation commands. Always commit with `jj describe` + `jj new`, never with `git commit`. The repo is colocated (`.jj/` + `.git/`).
 
 Common commands:
 ```bash

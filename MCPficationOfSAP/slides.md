@@ -11,12 +11,12 @@ transition: slide-left
 layout: cover
 mdc: true
 # Foto von <a href="https://unsplash.com/de/@alexdeloy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Psiuk</a> auf <a href="https://unsplash.com/de/fotos/eine-nahaufnahme-eines-musters-aus-sand-gSnIwHBKw3c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>      
-background: https://images.unsplash.com/photo-1708433428539-b4ecaef17223 
+background: ./mcp_server_background.png
 ---
 
 # MCP'fication of SAP
 
-How Model Context Protocol is Transforming SAP Development
+## How the Model Context Protocol is Transforming SAP
 
 <div class="pt-12">
   <span class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -39,10 +39,9 @@ layout: default
 
 1. **What is MCP?** - Quick introduction
 2. **SAP TechEd 2025** - The turning point
-3. **SAP Official MCP Servers** - CAP, Fiori, UI5, MDK
-4. **Community MCP Servers** - Documentation, ABAP, OData
-5. **What's Possible Today** - Real-world use cases
-6. **Outlook** - What's coming next
+3. **MCP Server Ecosystem** - SAP official & community
+4. **What's Possible Today** - Real-world use cases
+5. **Outlook** - What's coming next
 
 </v-clicks>
 
@@ -54,6 +53,9 @@ layout: section
 
 Model Context Protocol - The Universal AI Connector
 
+---
+layout: image
+image: ./usbc_mcp_network.png
 ---
 
 # Model Context Protocol (MCP)
@@ -175,9 +177,9 @@ graph LR
 layout: section
 ---
 
-# SAP Official MCP Servers
+# MCP Server Ecosystem
 
-Production-Ready Tools from SAP
+SAP Official & Community Servers
 
 ---
 
@@ -376,14 +378,6 @@ npm install @sap/mdk-mcp-server
 
 </div>
 </div>
-
----
-layout: section
----
-
-# Community MCP Servers
-
-Innovation from the SAP Developer Community
 
 ---
 
