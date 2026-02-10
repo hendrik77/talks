@@ -13,27 +13,29 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
-duration: 35min
+duration: 25min
 ---
 
 # SAP Stammtisch Frankfurt PLUS
 
-11. Februar 2026 · 18:30 Uhr
+11.Februar 2026 · 18:30 Uhr
 
 DZ BANK · Frankfurt am Main
 
 <div class="mt-10 text-sm opacity-80">
-  Willkommen zum Community-Stammtisch mit PLUS Vortraegen
+  Hendrik Neumann with Claude & Codex
 </div>
 
 ---
-layout: image-right
-image: ./SAP_Stammtisch_2026-02.jpg
+layout: image
+image: ./DZBANK-Turm.jpg
 ---
 
-# Gastgeber: DZ BANK
+# Gastgeberin: DZ BANK
 
-Danke an die **DZ Bank** und an **Alex Reincke** fuer die Organisation!
+Danke an unsere Gastgeberin, die **DZ BANK** und
+
+**Alex Reincke** für die Organisation!
 
 ---
 layout: section
@@ -42,20 +44,30 @@ layout: section
 # SAP Stammtisch Frankfurt
 
 ---
+layout: two-cols
+layoutClass: gap-8
+---
 
 # Community Event seit 2014
 
-- Von der Community, fuer die Community
+- Von der Community, für die Community
 - Heute: Stammtisch Nr. 94
-- Sonderformat: PLUS Vortraege
-- Naechster Meilenstein: Nr. 100 im August
+- Sonderformat: PLUS Vorträge
+- Nächster Meilenstein: Nr. 100 im August
+
+::right::
+
+<div class="flex flex-col items-center gap-10">
+  <img src="./1st_SAPStammtischFRA.png" class="w-80" alt="Tweet announcing first SAP Stammtisch Frankfurt" />
+  <img src="./SAPStammtisch2015-04.png" class="w-80" alt="SAP Stammtisch 2015-04 tweet" />
+</div>
 
 ---
 layout: image-right
 image: ./SAP-StammtischPlus2025-02.jpg
 ---
 
-# Besonderheit: PLUS Vortraege
+# Besonderheit: PLUS Vorträge
 
 Mehr Austausch, mehr Inhalte, mehr Community.
 
@@ -66,24 +78,24 @@ image: ./Stammtisch-Bembel.jpg
 
 # Klassik: Apfelweinkneipe
 
-Der Stammtisch-Urklassiker in Frankfurt.
+Der SAP Stammtisch-Urklassiker in Frankfurt.
 
 ---
 layout: image-right
 image: ./Weihnachtsmarkt.jpg
 ---
 
-# Klassik: Weihnachtsmarktbesuch
+# Moderne Klassiker: Weihnachtsmarktbesuch
 
-Gemeinsam Gluehwein und Jahresabschluss.
+Gemeinsam Glühwein und Jahresabschluss.
 
 ---
-layout: statement
+layout: center
 ---
 
 # Stammtisch Nr. 100
 
-August 2026 · Save the Date
+August 2026 · Save the Date!
 
 ---
 layout: section
@@ -92,22 +104,36 @@ layout: section
 # Meetup: Kostenexplosion
 
 ---
-
+layout: two-cols
+---
 # Was ist passiert?
 
 - Mai 2024: 35 USD / 6 Monate
-- Feb 2026: 119 USD / 6 Monate
+- Mai 2026: 119 USD / 6 Monate
 
-Wir brauchen eine faire, nachhaltige Alternative.
+Wir brauchen eine faire, nachhaltige Alternative. Meetup ist es nicht.
+
+::right::
+![alt](./meetup-chart-al.png)
 
 ---
-layout: image
-image: ./openMeet-2026-02.png
+layout: two-cols
 ---
 
 # Vorschlag: openMeet
 
-Open Source, community-basiert, transparente Kosten.
+**Free, Forever**
+
+No subscription fees. No ads. Open-source and community-owned.
+
+<div class="flex flex-col">
+  <img src="./openmeet-web.png" class="w-80" alt="SAP Stammtisch 2015-04 tweet" />
+</div>
+
+::right::
+<div v-click>
+  <img src="./open_meet_example_xl.png" class="w-100" alt="SAP Stammtisch 2015-04 tweet" />
+</div>
 
 ---
 layout: two-cols
@@ -170,6 +196,8 @@ layout: end
 class: text-center
 ---
 
-# Danke fuers Dabeisein
+# Danke fürs Dabeisein
 
-Naechster Stammtisch im Maerz 2026!
+Nächster Stammtisch im März 2026!
+
+**Viel Spaß!**
