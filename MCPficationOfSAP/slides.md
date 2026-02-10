@@ -10,7 +10,7 @@ drawings:
 transition: slide-left
 layout: cover
 mdc: true
-# Foto von <a href="https://unsplash.com/de/@alexdeloy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Psiuk</a> auf <a href="https://unsplash.com/de/fotos/eine-nahaufnahme-eines-musters-aus-sand-gSnIwHBKw3c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>      
+# Foto von <a href="https://unsplash.com/de/@alexdeloy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Psiuk</a> auf <a href="https://unsplash.com/de/fotos/eine-nahaufnahme-eines-musters-aus-sand-gSnIwHBKw3c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 background: ./mcp_server_background.png
 ---
 
@@ -30,7 +30,8 @@ After SAP TechEd 2025, this is one of the hottest topics in the SAP ecosystem.
 -->
 
 ---
-layout: default
+layout: image
+image: ./agenda_background.png
 ---
 
 # Agenda
@@ -133,14 +134,10 @@ This wasn't just announcements - they released working code.
 -->
 
 ---
-#layout: image-right
-#image: TechEd-dev-advocats-mcp.png
-#background-size: 100%
+layout: two-cols
 ---
 # Featured TechEd Sessions
-
-<div class="grid grid-cols-2 gap-4">
-<div>
+A selection from the session catalog
 
 **BTM260**
 Building AI Agents with SAP LeanIX & MCP
@@ -148,18 +145,19 @@ Building AI Agents with SAP LeanIX & MCP
 **CA261**
 Create Great UX with AI, SAP Design System & MCP
 
-</div>
-<div>
-
 **Developer Keynote**
 Live MCP AI Agents demo in VS Code
 
 **Agentic Coding**
 Extending CAP and Fiori with MCP
 
-</div>
-</div>
-
+::right::
+<div class="flex flex-col items-left gap-4">
+<div v-click>
+ <img src="./TechEd-dev-advocats-mcp.png"
+      class="w-100"
+      alt="Weg zur Trattoria" />
+ </div>
 <div v-click class="mt-8">
 
 ```mermaid {scale: 0.6}
@@ -172,6 +170,7 @@ graph LR
 ```
 
 </div>
+</div>
 
 ---
 layout: section
@@ -183,7 +182,7 @@ SAP Official & Community Servers
 
 ---
 
-# SAP MCP Server Landscape
+# SAP Development MCP Server
 
 <div class="grid grid-cols-4 gap-4 text-center">
 <div v-click class="p-4 bg-blue-500 bg-opacity-20 rounded">
@@ -228,7 +227,7 @@ All servers are **open-source** under Apache-2.0 license
 
 ---
 
-# CAP MCP Server
+# Example: CAP MCP Server
 
 Transforms AI agents into **CAP development experts**
 
@@ -247,6 +246,7 @@ Transforms AI agents into **CAP development experts**
 <div v-click class="mt-4">
 
 **Capabilities:**
+
 - Entity relationships
 - Annotations & metadata
 - HTTP endpoint info
@@ -436,6 +436,7 @@ npm install @sap/mdk-mcp-server
 <div>
 
 **Tools:**
+
 ```
 search        - Query all sources
 fetch         - Get full documents
@@ -465,7 +466,7 @@ sap_help_get
 
 # ABAP MCP Server
 
-**Bringing AI to Eclipse-based ABAP development**
+Bringing AI to Eclipse-based ABAP development
 
 <v-clicks>
 
@@ -668,13 +669,13 @@ graph LR
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-**1. Install MCP Client**
+### 1. Install MCP Client
 
 ```bash
 # Claude Desktop, Cline, or Cursor
 ```
 
-**2. Add SAP MCP Servers**
+### 2. Add SAP MCP Servers
 
 ```json
 {
@@ -693,7 +694,7 @@ graph LR
 </div>
 <div>
 
-**3. Start Developing**
+### 3. Start Developing
 
 <v-clicks>
 
@@ -706,7 +707,7 @@ graph LR
 
 <div v-click class="mt-4">
 
-**Resources:**
+### Resources:
 - github.com/cap-js/mcp-server
 - github.com/SAP/open-ux-tools
 - github.com/marianfoo/mcp-sap-docs

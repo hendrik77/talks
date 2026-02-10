@@ -38,6 +38,21 @@ Danke an unsere Gastgeberin, die **DZ BANK** und
 **Alex Reincke** für die Organisation!
 
 ---
+layout: image
+image: ./DZBANK-Alex/Folie1.png
+---
+
+---
+layout: image
+image: ./DZBANK-Alex/Folie2.png
+---
+
+---
+layout: image
+image: ./DZBANK-Alex/Folie3.png
+---
+
+---
 layout: section
 ---
 
@@ -144,7 +159,7 @@ layoutClass: gap-8
 
 - Plattform: openmeet.net
 - Community-Gruppe:
-  https://platform.openmeet.net/groups/sap-stammtisch-frankfurt-jhoivw
+  <https://platform.openmeet.net/groups/sap-stammtisch-frankfurt-jhoivw>
 - Bitte testen und Feedback geben
 
 ::right::
