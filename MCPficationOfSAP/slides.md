@@ -10,7 +10,6 @@ drawings:
 transition: slide-left
 layout: cover
 mdc: true
-# Foto von <a href="https://unsplash.com/de/@alexdeloy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Psiuk</a> auf <a href="https://unsplash.com/de/fotos/eine-nahaufnahme-eines-musters-aus-sand-gSnIwHBKw3c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 background: ./mcp_server_background.png
 ---
 
@@ -115,10 +114,10 @@ SAP positioned MCP as the key standard for the **"Agentic Enterprise"**
 
 <v-clicks>
 
-- **Open-sourced MCP Servers** for CAP, UI5, Fiori, MDK, ABAP (Q2/2026)
-- **MCP Support** in SAP Build & VS Code
-- **Integration Suite MCP Gateway**
-- **Joule Studio** MCP interoperability
+- **Open-sourced MCP Servers** for CAP, UI5, Fiori, MDK
+- **HANA Cloud MCP** Generally Available (Vector, Spatial, Knowledge Graph)
+- **Integration Suite MCP Gateway** for centralized governance
+- **Joule Studio** extensible with external MCP tools
 
 </v-clicks>
 
@@ -182,46 +181,62 @@ SAP Official & Community Servers
 
 ---
 
-# SAP Development MCP Server
+# SAP Official MCP Servers
 
-<div class="grid grid-cols-4 gap-4 text-center">
-<div v-click class="p-4 bg-blue-500 bg-opacity-20 rounded">
+<div class="grid grid-cols-3 gap-3 text-center text-sm">
+<div v-click class="p-3 bg-blue-500 bg-opacity-20 rounded">
 
 ### 🧢 CAP
 `@cap-js/mcp-server`
 
-Model & Docs Search
+CDS models & docs search
 
 </div>
-<div v-click class="p-4 bg-green-500 bg-opacity-20 rounded">
+<div v-click class="p-3 bg-green-500 bg-opacity-20 rounded">
 
-### 🌺 Fiori
+### 🌺 Fiori & UI5
 `@sap-ux/fiori-mcp-server`
 
-App Generation & Editing
+App generation & linting
 
 </div>
-<div v-click class="p-4 bg-orange-500 bg-opacity-20 rounded">
-
-### 5️⃣ UI5
-`@sapui5/mcp-server`
-
-APIs, Linting, Scaffolding
-
-</div>
-<div v-click class="p-4 bg-purple-500 bg-opacity-20 rounded">
+<div v-click class="p-3 bg-purple-500 bg-opacity-20 rounded">
 
 ### 📱 MDK
 `@sap/mdk-mcp-server`
 
-Mobile App Development
+Mobile app development
+
+</div>
+<div v-click class="p-3 bg-cyan-500 bg-opacity-20 rounded">
+
+### 🏢 LeanIX
+IT landscape & governance
+
+Portfolio assessment
+
+</div>
+<div v-click class="p-3 bg-teal-500 bg-opacity-20 rounded">
+
+### 📊 Datasphere
+Spaces, assets & queries
+
+Natural language SQL
+
+</div>
+<div v-click class="p-3 bg-red-500 bg-opacity-20 rounded">
+
+### ⚡ HANA Cloud
+Multi-model engine access
+
+Vector, Spatial, Knowledge Graph
 
 </div>
 </div>
 
-<div v-click class="mt-8 text-center">
+<div v-click class="mt-4 text-center text-sm">
 
-All servers are **open-source** under Apache-2.0 license
+All open-source (Apache-2.0) · Also: **Automation Pilot** MCP for cloud ops
 
 </div>
 
@@ -387,32 +402,33 @@ npm install @sap/mdk-mcp-server
 <div v-click class="p-3 bg-blue-500 bg-opacity-10 rounded">
 
 ### 📘 Documentation
-- **mcp-sap-docs** - UI5, CAP, ABAP docs
-- **mcp-sap-notes** - SAP Notes search
-- 17 sources, 53,000+ files
+- **mcp-sap-docs** - 50,000+ files
+- Offline index + live Community API
+- SAP Notes, Help Portal search
 
 </div>
 <div v-click class="p-3 bg-green-500 bg-opacity-10 rounded">
 
 ### 🧑‍💻 Development
-- **mcp-abap-adt** - ABAP system access
+- **mcp-abap-adt** - ADT REST API bridge
+- **ABAP FS** - 30+ language model tools
 - **mcp-sap-gui** - GUI automation
-- **cap-mcp-plugin** - Auto MCP from CAP
+- **Skybuffer** - ABAP Add-On (no middleware)
 
 </div>
 <div v-click class="p-3 bg-purple-500 bg-opacity-10 rounded">
 
-### 📡 Data Access
-- **OData MCP Bridge** - Universal connector
-- **HANA MCP Server** - ML operations
-- **Datasphere MCP** - Analytics access
+### 📡 Data & Business
+- **OData MCP Bridge** - BTP-hosted
+- **SuccessFactors** - RBP audits & config
+- **CData HANA** - Natural language SQL
 
 </div>
 </div>
 
 <div v-click class="mt-6">
 
-**Key Contributors:** marianfoo, mario-andreschak, oisee, lemaiwo, gavdilabs
+**Key Contributors:** marianfoo, mario-andreschak, serdarbeden, lemaiwo, marcellourbani
 
 </div>
 
@@ -464,26 +480,37 @@ sap_help_get
 
 ---
 
-# ABAP MCP Server
+# ABAP MCP Servers
 
-Bringing AI to Eclipse-based ABAP development
+Bringing AI to on-premise ABAP development
+
+<div class="grid grid-cols-2 gap-8">
+<div>
 
 <v-clicks>
 
 **Problem:** Joule isn't available for on-premise S/4HANA
 
-**Solution:** Community MCP server for GitHub Copilot in Eclipse
+**Solution:** Multiple community MCP servers bridging the gap
 
-**Knowledge Sources:**
-- Official ABAP Keyword Documentation
-- DSAG Development Guidelines
-- ABAP Style Guide
-- SAP Community & Help
-- ABAP Feature Matrix
-
-**Why it matters:** Only practical AI option for on-premise ABAP developers
+- **mcp-abap-adt** - ADT REST API: read source, analyze RAP objects, where-used analysis
+- **ABAP FS** - VS Code extension with 30+ tools for unit testing, SQL, object management
 
 </v-clicks>
+
+</div>
+<div v-click>
+
+**Knowledge Sources:**
+- ABAP Keyword Documentation
+- DSAG Development Guidelines
+- ABAP Style Guide & Feature Matrix
+- SAP Community & Help
+
+**Use case:** Analyze classic ABAP and suggest modern **RAP** structures
+
+</div>
+</div>
 
 ---
 
@@ -495,7 +522,7 @@ Bringing AI to Eclipse-based ABAP development
 
 **The Insight:** OData already has machine-readable metadata
 
-**The Solution:** Translate metadata → MCP tool definitions
+**The Solution:** BTP-hosted bridge with **3-level progressive discovery**
 
 **Scale:**
 - SAP Systems: ~10,000 services
@@ -526,33 +553,31 @@ Real-World Use Cases
 
 ---
 
-# Current Capabilities
+# Real-World Use Cases
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-### Development Acceleration
+### "Vibe Coding"
 
 <v-clicks>
 
-- **CAP:** Generate handlers, understand models
-- **UI5:** Scaffold apps, fix deprecations
-- **Fiori:** Create compliant applications
-- **MDK:** Build mobile apps faster
+- Generate full **CAP entities + Fiori List Reports** from a description
+- Scaffold **MDK mobile apps** from a sketch
+- AI understands your CDS model and generates matching handlers
 
 </v-clicks>
 
 </div>
 <div>
 
-### Knowledge Access
+### Operations & Business
 
 <v-clicks>
 
-- Search 53,000+ doc files instantly
-- Query SAP Notes with AI
-- Access ABAP guidelines
-- Get version-specific API info
+- **AI-Driven SRE:** Investigate ST22 dumps, trace call stacks, reference SAP Notes
+- **Conversational ERP:** "Show me 10 banks" or "Update supplier status" via OData
+- **Governance:** "List applications needing replacement by 2028" via LeanIX
 
 </v-clicks>
 
@@ -561,7 +586,7 @@ Real-World Use Cases
 
 <div v-click class="mt-6 p-4 bg-green-500 bg-opacity-20 rounded">
 
-**Demo Setup:** Claude Desktop + Cline + SAP MCP Servers = AI-powered SAP development
+**ABAP Modernization:** Analyze classic ABAP → suggest modern RAP business objects
 
 </div>
 
@@ -575,33 +600,31 @@ What's Coming Next
 
 ---
 
-# Future Possibilities
+# Roadmap 2026+
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-### Near Term
+### H1/H2 2026
 
 <v-clicks>
 
-- **SAP AI Core** integration with Cline
-- **Joule Studio** MCP extensions
-- **Integration Suite** MCP Gateway GA
-- More community servers
+- **Integration Suite** MCP Gateway GA - one-step MCP from existing APIs
+- **ABAP Cloud in VS Code** (Q2) - file-based dev with native AI
+- **Specialized Models:** SAP-ABAP-1, SAP-RPT-1 for superior accuracy
 
 </v-clicks>
 
 </div>
 <div>
 
-### Long Term
+### The Horizon
 
 <v-clicks>
 
-- **Agent-to-agent** communication
-- **Autonomous workflows** across systems
-- **Real-time** business process orchestration
-- **Natural language** SAP administration
+- **A2A Protocol** - agent-to-agent collaboration (AWS, Microsoft, Google)
+- **The "Post-App" Era** - central AI agent across the SAP landscape
+- **Embodied AI** - Joule agents with autonomous devices & robotics
 
 </v-clicks>
 
