@@ -145,8 +145,8 @@ No subscription fees. No ads. Open-source and community-owned.
 </div>
 
 ::right::
-<div v-click>
-  <img src="./open_meet_example_xl.png" class="w-100" alt="SAP Stammtisch 2015-04 tweet" />
+<div class="flex items-center justify-center h-full">
+  <img src="./open_meet_example_xl.png" class="max-h-[420px]" alt="openMeet example screenshot" />
 </div>
 
 ---
