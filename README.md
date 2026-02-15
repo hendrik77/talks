@@ -1,6 +1,6 @@
 # Talks
 
-Collection of presentation slides built with [Slidev](https://sli.dev/).
+Collection of presentation slides built with the help of AI and [Slidev](https://sli.dev/).
 
 ## Presentations
 
