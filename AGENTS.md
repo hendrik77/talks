@@ -2,6 +2,14 @@
 ## Version Control
 Use **jj** (Jujutsu) for all version control operations. Never use `git commit`, `git add`, or other git mutation commands. The repo is jj-colocated (`.jj/` + `.git/`).
 
+## Project Overview
+Monorepo of presentations, one self-contained talk per subdirectory. Talks use different presentation tools; check the format before editing or building:
+- **Slidev**: `slides.md` + `package.json` (`MCPficationOfSAP/`, `SAPStammtischFRA-2026-02/`). Use the `slidev` skill. Build with `npm run dev|build|export` in the talk folder.
+- **Marp**: single `.md` deck with `marp: true` frontmatter, no `package.json` (`Jev_and_the_Rise_of_System_One_Models/`). Do not use the `slidev` skill or Slidev syntax. Build with `npx @marp-team/marp-cli <deck>.md --html` / `--pdf --allow-local-files` and regenerate the committed `.html`/`.pdf` after changes. The deck embeds base64 images, so read it in ranges.
+- **Images**: SVG/PNG slides only, no build step (`agentic_engineering/`). Edit the SVGs directly and keep the shared visual style.
+
+Never convert a talk to another tool unless asked. Add new talks to `README.md` with a `*Format: ...*` line. Prettier's Slidev parser applies only to `slides.md` and `pages/*.md`. See `CLAUDE.md` for the full per-format guide.
+
 ## Skills
 A skill is a set of local instructions to follow that is stored in a `SKILL.md` file. Below is the list of skills that can be used. Each entry includes a name, description, and file path so you can open the source for full instructions when using a specific skill.
 ### Available skills
